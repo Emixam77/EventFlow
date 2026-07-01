@@ -140,7 +140,7 @@ export default function EventBuilder() {
   };
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [showPricingModal, setShowPricingModal] = useState(false);
-  const [isShareModalOpen, setShowShareModal] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
   const [isSendingTest, setIsSendingTest] = useState(false);
   const [testMessage, setTestMessage] = useState('');
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);

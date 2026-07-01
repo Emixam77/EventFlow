@@ -4,8 +4,8 @@ import { Resend } from 'resend';
 
 // Initialisation conditionnelle
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''; // Idéalement SERVICE_ROLE_KEY côté serveur
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://dummy.supabase.co';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'dummy_key'; // Idéalement SERVICE_ROLE_KEY côté serveur
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function POST(req: Request) {

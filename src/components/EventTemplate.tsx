@@ -42,6 +42,7 @@ export type EventConfig = {
   eventDate: string;
   location: string;
   primaryColor: string;
+  bg?: string;
   hideLogo?: boolean;
   logoImage?: string;
   logoText: string;

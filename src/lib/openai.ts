@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 
 export const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY || 'dummy_key',
 });
 
 export const HOSPITALITY_SYSTEM_PROMPT = `Tu es un coordinateur logistique expert en événements musicaux et culturels.

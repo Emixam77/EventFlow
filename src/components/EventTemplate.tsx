@@ -249,7 +249,7 @@ const EditableTextArea = ({ text, onSave, isEditable, style = {} }: { text: stri
       className="tiptap-container"
     >
       {editor && isEditing && (
-        <BubbleMenu editor={editor} tippyOptions={{ duration: 100 }}>
+        <BubbleMenu editor={editor}>
           <div style={{ display: 'flex', gap: '0.5rem', backgroundColor: '#1F2937', padding: '0.5rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
             <button onClick={() => editor.chain().focus().toggleBold().run()} style={{ background: editor.isActive('bold') ? '#4B5563' : 'transparent', color: 'white', border: 'none', padding: '0.2rem', borderRadius: '4px', cursor: 'pointer' }}><Bold size={16} /></button>
             <button onClick={() => editor.chain().focus().toggleItalic().run()} style={{ background: editor.isActive('italic') ? '#4B5563' : 'transparent', color: 'white', border: 'none', padding: '0.2rem', borderRadius: '4px', cursor: 'pointer' }}><Italic size={16} /></button>

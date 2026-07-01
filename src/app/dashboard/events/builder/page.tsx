@@ -108,7 +108,7 @@ export default function EventBuilder() {
   const [isSaving, setIsSaving] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  const [activeTab, setActiveTab] = useState<'templates' | 'general' | 'design' | 'tickets'>('templates');
+  const [activeTab, setActiveTab] = useState<'templates' | 'general' | 'design' | 'tickets' | 'postachat'>('templates');
   const [selectedSectionId, setSelectedSectionId] = useState<string | null>('pricing');
   const [activeTemplateId, setActiveTemplateId] = useState<string>('festival');
   const [customTemplates, setCustomTemplates] = useState<{id: string, name: string, config: EventConfig}[]>([]);
